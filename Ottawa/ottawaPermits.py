@@ -40,7 +40,7 @@ for link in links:
 
         
 OttPermits = OttPermits.dropna(subset=['PERMIT#'])
-OttPermits.to_excel('Ignore/ottPermits.xlsx',index=False)
+OttPermits.to_excel('../Ignore/ottPermits.xlsx',index=False)
 
 
 
