@@ -31,7 +31,7 @@ for link in links:
         tempPage = requests.get('http://data.ottawa.ca'+link['href'])
         tempSoup = BeautifulSoup(tempPage.text,'html.parser')
         data = tempSoup.find(class_='muted ellipsis').find('a')['href']
-        if link['title'][:3] == 'Feb':
+        if link['title'][:3] in ['Feb','May','Jun','Jul']:
             test = pd.read_excel(data,sheet_name=0,header=5)
             OttPermits = OttPermits.append(test,sort=False)
         else:

@@ -8,7 +8,7 @@ from credentials import connection
 client = MongoClient(connection)
 # Connect to Ottawa Address Database
 db = client['Address']['Ottawa']
-# Iterate over the files Address Datasets
+# Only add the new Addresses
 Address = pd.read_excel('../Ignore/ottAddress_Final.xlsx')
 
 # for filename in os.listdir('../Ignore'):
