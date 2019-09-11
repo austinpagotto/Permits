@@ -1,2 +1,2 @@
 conda remove pyproj  --force
-pip install pyproj
+pip install pyproj == 1.9.6
